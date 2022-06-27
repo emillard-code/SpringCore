@@ -1,8 +1,10 @@
 package com.project;
 
-// Setter Injection
+import org.springframework.beans.factory.annotation.Value;
+
 public class Tire {
 
+    @Value("Firestone")
     private String brand;
 
     public String getBrand() {
@@ -15,7 +17,7 @@ public class Tire {
 
     @Override
     public String toString() {
-        return "Tire [" + "brand=" + brand + ']';
+        return "tire [" + "brand=" + brand + ']';
     }
 
 }
